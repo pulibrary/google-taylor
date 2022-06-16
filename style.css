@@ -27,7 +27,7 @@ body {
     margin: 10px;
 }
 
-#profile-photo {
+#profile-photo, #menu-icon {
     height: 30px;
 }
 
