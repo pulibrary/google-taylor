@@ -4,7 +4,7 @@ body {
     flex-direction: column;
 }
 
-.main-nav {
+.nav {
     width: 100%;
     height: 70px;
     display: flex;
@@ -32,9 +32,21 @@ body {
 
 .search-area {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#google-logo-cont, #search-bar-cont, .button-cont {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+#google-logo, #search-bar, .button {
+    margin: auto;
 }
 #google-logo {
-    height: 100px;
+    height: 92px;
+    width: 272px;
 }
 
 footer {
