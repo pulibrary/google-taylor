@@ -3,24 +3,28 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <nav>
-            <div>
-                <a href="https://about.google/">About</a>
-                <a href="https://store.google.com/">Store</a>
+        <div class="main-nav">
+            <div class="nav-left">
+                <a class="nav-item" href="https://about.google/">About</a>
+                <a class="nav-item" href="https://store.google.com/">Store</a>
             </div>
-            <div>
-                <a href="https://mail.google.com/">Gmail</a>
-                <a href="https://images.google.com/">Images</a>
-                <p>(Menu Image)</p>
-                <img src="img/profile.png"></img>
+            <div class="nav-right">  
+                <a class="nav-item" href="https://mail.google.com/">Gmail</a>
+                <a class="nav-item" href="https://images.google.com/">Images</a>
+                <p class="nav-item">(Menu)</p>
+                <img  class="nav-item" id="profile-photo" src="img/profile.png"></img>
             </div>
-        </nav>
-        <img src="img/google-logo.png"></img>
+        </div>
+        <div id="search-area">
+            <img id="google-logo" src="img/google-logo.png"></img>
+            <p>(Search Bar)</p>
+            <p>(Buttons)</p>
+        </div>
         <footer>
-
+            <p>(Bottom Nav Bar)</p>
         </footer>
     </body>
 </html>

@@ -1,4 +1,42 @@
-@font-face {
-    font-family: "open sans";
-    src: url('fonts/googlesans.woff2');
+body {
+    height: 100vh;
+}
+
+.main-nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-left {
+    margin-top: 0px;
+    flex: 1;
+    justify-content: left;
+    display: flex;
+}
+.nav-right {
+    margin-top: 0px;
+    flex: 2;
+    justify-content: right;
+    display: flex;
+} 
+.nav-item {
+    margin: 10px;
+}
+#profile-photo {
+    height: 30px;
+    overflow: hidden;
+}
+
+.search-area {
+    width: 100%;
+}
+#google-logo {
+    height: 100px;
+}
+
+footer {
+    background-color: steelblue;
+    margin-top: auto;
+    width: 100%;
 }
