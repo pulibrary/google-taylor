@@ -4,30 +4,31 @@ body {
     flex-direction: column;
 }
 
-.nav {
+.top-nav {
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
 }
-.nav-left {
-    margin-top: 0px;
-    flex: 1;
-    justify-content: left;
+.top-nav-left,.top-nav-right {
     display: flex;
+    margin-top: 0px;
+}
+.nav-left {
+    justify-content: left;
+    flex: 1;
+    
 }
 .nav-right {
-    margin-top: 0px;
-    flex: 2;
     justify-content: right;
-    display: flex;
+    flex: 2;
 } 
 .nav-item {
     margin: 10px;
 }
+
 #profile-photo {
     height: 30px;
-    overflow: hidden;
 }
 
 .search-area {
@@ -36,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #google-logo-cont, #search-bar-cont, .button-cont {
     display: flex;
     padding: 10px;
@@ -50,7 +52,33 @@ body {
 }
 
 footer {
-    background-color: steelblue;
     margin-top: auto;
     width: 100%;
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+.bt-nav-left, .bt-nav-center, .bt-nav-right {
+    display: flex;
+    flex: 1;
+    margin-top: 0px;
+}
+.bt-nav-left {
+    justify-content: left;
+    
+}
+.bt-nav-center {
+    justify-content: center;
+}
+.bt-nav-right {
+    justify-content: right;
+} 
+
+#leaf {
+    height: 15px;
 }
