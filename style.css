@@ -1,7 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: 14px;
+    font-family: Roboto, arial, sans-serif;
+    color: #202124;
 }
 a:link, a:visited {
     text-decoration: none;
@@ -12,25 +19,31 @@ a:hover {
 
 .top-nav {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.top-nav-left,.top-nav-right {
+.top-nav-left, .top-nav-right {
     display: flex;
+    padding: 0px 20px;
     margin-top: 0px;
+    align-items: center;
 }
-.nav-left {
+.top-nav-left {
     justify-content: left;
     flex: 1;
-    
 }
-.nav-right {
+.top-nav-right {
+    font-size: 13px;
     justify-content: right;
     flex: 2;
 } 
 .nav-item {
     margin: 10px;
+}
+.top-nav a {
+    color: #202124;
 }
 
 #profile-photo, #menu-icon {
@@ -78,10 +91,11 @@ footer {
 }
 
 .bottom-nav {
-    width: 100%;
-    height: 55px;
+    height: 50px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #f2f2f2;
 }
 .bt-nav-left, .bt-nav-center, .bt-nav-right {
@@ -98,8 +112,11 @@ footer {
 .bt-nav-right {
     justify-content: right;
 } 
+.bottom-nav a {
+    color: #70757a;
+}
 
 #leaf {
     height: 15px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
 }
