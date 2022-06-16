@@ -62,8 +62,14 @@ a:hover {
     align-items: center;
 }
 #button-cont button{
-    margin: 8px;
-    padding: 5px 15px 5px 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 10px 15px;
+}
+#button-cont button:hover {
+    border: 1px solid #dadce0;
 }
 
 footer {
@@ -95,4 +101,5 @@ footer {
 
 #leaf {
     height: 15px;
+    margin: 10px 0px 10px 0px;
 }
