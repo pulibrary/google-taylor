@@ -38,17 +38,26 @@ body {
     align-items: center;
 }
 
-#google-logo-cont, #search-bar-cont, .button-cont {
+#google-logo-cont, #search-bar-cont, #button-cont {
     display: flex;
     padding: 10px;
     margin: 10px;
 }
-#google-logo, #search-bar, .button {
+#google-logo, #search-bar, #button-cont {
     margin: auto;
 }
+
 #google-logo {
     height: 92px;
     width: 272px;
+}
+#button-cont {
+    justify-content: center;
+    align-items: center;
+}
+#button-cont button{
+    margin: 8px;
+    padding: 5px 15px 5px 15px;
 }
 
 footer {
