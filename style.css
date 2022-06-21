@@ -54,11 +54,9 @@ a:hover {
     border-radius: 50px;
 }
 
-.search-area {
+#search-area {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 150px;
 }
 
 #google-logo-cont, #search-bar-cont, #button-cont {
