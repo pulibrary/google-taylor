@@ -107,7 +107,6 @@ a:hover {
 
 footer {
     margin-top: auto;
-    /* margin-bottom: 0; */
     width: 100%;
 }
 
@@ -134,15 +133,6 @@ footer {
 .bt-nav-right {
     align-content: end;
 } 
-/* .bt-nav-left {
-    justify-content: left;
-}
-.bt-nav-center {
-    justify-content: center;
-}
-.bt-nav-right {
-    justify-content: right;
-}  */
 .bottom-nav a {
     color: #70757a;
 }
@@ -158,9 +148,6 @@ footer {
 
 /* from 570px to 980px, carbon neutral stacks on top, others in one row */
 @media only screen and (min-width: 570px) {
-    /* footer {
-        justify-content: ;
-    } */
     .bottom-nav {
         height: 80px;
         padding: 0px 20px;
@@ -173,8 +160,6 @@ footer {
         display: flex;
         flex: 1;
         margin-top: 0px;
-        /* white-space: nowrap; */
-        /* align-content: center; */
     }
     .bt-nav-left {
         justify-content: left;
@@ -191,7 +176,7 @@ footer {
 
 }
 
-/* at 980px and larger, all in one row */
+/* at 740px and larger, all in one row */
 @media only screen and (min-width: 740px) {
     .bottom-nav {
         height: 50px;
