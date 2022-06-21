@@ -43,6 +43,7 @@ a:hover {
 } 
 .nav-item {
     margin: 10px;
+    display: inline-block;
 }
 .top-nav a {
     color: #202124;
@@ -106,23 +107,34 @@ a:hover {
 
 footer {
     margin-top: auto;
+    /* margin-bottom: 0; */
     width: 100%;
 }
 
 .bottom-nav {
-    height: 50px;
+    height: 120px;
     padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #f2f2f2;
+    white-space: nowrap;
 }
 .bt-nav-left, .bt-nav-center, .bt-nav-right {
     display: flex;
     flex: 1;
     margin-top: 0px;
+    justify-content: center;
 }
 .bt-nav-left {
+    align-content: start;
+}
+.bt-nav-center {
+    align-content: center;
+}
+.bt-nav-right {
+    align-content: end;
+} 
+/* .bt-nav-left {
     justify-content: left;
 }
 .bt-nav-center {
@@ -130,7 +142,7 @@ footer {
 }
 .bt-nav-right {
     justify-content: right;
-} 
+}  */
 .bottom-nav a {
     color: #70757a;
 }
@@ -146,14 +158,59 @@ footer {
 
 /* from 570px to 980px, carbon neutral stacks on top, others in one row */
 @media only screen and (min-width: 570px) {
-
+    /* footer {
+        justify-content: ;
+    } */
+    .bottom-nav {
+        height: 80px;
+        padding: 0px 20px;
+        justify-content: center;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bt-nav-left, .bt-nav-center, .bt-nav-right {
+        display: flex;
+        flex: 1;
+        margin-top: 0px;
+        /* white-space: nowrap; */
+        /* align-content: center; */
+    }
+    .bt-nav-left {
+        justify-content: left;
+        align-content: end;
+    }
+    .bt-nav-center {
+        justify-content: center;
+        align-content: start;
+    }
+    .bt-nav-right {
+        justify-content: right;
+        align-content: end;
+    } 
 
 }
 
 /* at 980px and larger, all in one row */
-@media only screen and (min-width: 980px) {
-
-
+@media only screen and (min-width: 740px) {
+    .bottom-nav {
+        height: 50px;
+        padding: 0px 20px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bt-nav-left {
+        justify-content: left;
+    }
+    .bt-nav-center {
+        justify-content: center;
+    }
+    .bt-nav-right {
+        justify-content: right;
+    } 
 }
 
 
